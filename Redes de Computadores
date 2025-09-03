@@ -1,0 +1,45 @@
+Este repositório documenta meu aprendizado e progresso na disciplina de Redes de Computadores, do curso de Engenharia de Software.
+
+06/08 - Introdução e Conceitos Fundamentais
+Nossa primeira aula foi sobre a base de Redes de Computadores. Vimos a definição de protocolos e como a comunicação entre redes acontece. Também exploramos as diferenças entre os tipos de comunicação (simplex, half-duplex, full-duplex).
+Minha primeira impressão foi de que esta matéria é de extrema importância. Como tenho interesse na área de Cybersecurity, os conceitos de redes são a fundação para entender como proteger sistemas. O conhecimento de como os dados se movem, como as falhas acontecem e como os protocolos operam será fundamental na minha jornada profissional.
+
+13/08 - Entidades, Transmissão e Protocolos
+A segunda aula aprofundou nosso entendimento sobre as organizações que governam a internet e os conceitos de transmissão.
+Organizações Reguladoras
+ * IEEE (Institute of Electrical and Electronic Engineers): Responsável por toda a parte física das conexões de rede.
+ * ISO (International Organization for Standardization): Padroniza os tipos de conexão.
+ * ICANN (Internet Corporation for Assigned Names and Numbers): Distribui nomes e números da internet.
+ * ITU (International Telecommunication Union): Regula a telecomunicação global.
+ * IANA (Internet Assigned Numbers Authority): Atua junto com a ICANN na parte de autoridade e regulação dos números.
+ * No Brasil: Vimos as entidades nacionais, como CGI.br, NIC.br e CERT.br.
+Modos de Transmissão
+Analisamos os modos de transmissão, como difusão (broadcasting, onde a mensagem é enviada para todos) e multidifusão (multicasting, onde a mensagem é enviada para um grupo específico). Também revisamos protocolos como DNS, IP e ICMP.
+A Rede Acadêmica e Ferramentas de Diagnóstico
+Aprendemos sobre a Rede Ipê, que é a rede acadêmica nacional operada pela RNP, conectando universidades e centros de pesquisa no Brasil. Ela utiliza tecnologias avançadas como fibra óptica e DWDM, suportando velocidades de até 100 Gb/s em um backbone nacional com topologia em anéis regionais.
+A RNP também oferece ferramentas essenciais para o diagnóstico e gestão de redes:
+ * Panorama de Tráfego: Oferece estatísticas de uso e capacidade da rede, permitindo identificar picos de demanda e desempenho. No Tocantins, esses dados são vitais para o planejamento da infraestrutura.
+ * Whois: Um serviço para consultar informações sobre um IP ou domínio, como o proprietário e contatos administrativos. É crucial para a gestão e rastreamento de recursos de rede.
+ * Looking Glass: Permite visualizar informações de roteamento de pacotes a partir de diferentes pontos da rede, sendo útil para diagnóstico de rotas.
+ * Via Ipê: Um serviço de monitoramento que mede a qualidade da conexão, analisando parâmetros como latência, perda de pacotes e jitter.
+
+20/08 - Interfaces de Rede e Protocolos de Camada
+Nesta aula, exploramos as interfaces de rede e aprofundamos nosso conhecimento sobre protocolos de camada. Realizamos uma atividade prática com comandos como ipconfig, ping, arp, tracert e netstat.
+Endereçamento de Rede
+ * Endereço IP: Funciona como um CPF, identificando e localizando dispositivos em uma rede para permitir a comunicação.
+ * Gateway Padrão: O endereço 10.30.127.254 representa o roteador que conecta a rede local a outras redes.
+ * Tipos de Endereços:
+   * Endereço de rede: Identifica a própria rede.
+   * Endereço de broadcast: Usado para enviar mensagens a todos os dispositivos da rede.
+   * Endereço de loopback: 127.0.0.1, usado para testar a própria máquina.
+Ferramentas de Diagnóstico
+ * Ping: Usa o protocolo ICMP para testar a conectividade. Ele envia um Echo Request e o destino responde com um Echo Reply, confirmando que está ativo e permitindo medir a latência.
+   * TTL (Time to Live): O TTL de um pacote diminui a cada salto (roteador). Via de regra, quanto mais longe o destino, menor o valor do TTL.
+   * Jitter: A variação na latência entre pacotes consecutivos. Altos valores de jitter afetam aplicações em tempo real, como chamadas de voz e jogos.
+Protocolo ARP e a Tabela de Roteamento
+ * ARP (Address Resolution Protocol): Usado para descobrir o endereço físico (MAC) de um dispositivo a partir de seu endereço IP.
+ * Tabela ARP: Armazena associações entre IPs e MACs para evitar requisições repetidas e agilizar a comunicação.
+ * Rotas: Um caminho que os pacotes seguem do ponto de origem ao destino, passando por múltiplos roteadores. A métrica da rota indica a prioridade do caminho: quanto menor a métrica, mais preferencial ele é.
+
+27/08 - Pulos de Rede e Segurança
+Nesta aula, nos aprofundamos nos "pulos" de rede, utilizando o comando tracert para visualizar o caminho que os pacotes de dados percorrem. Vimos como a criptografia é fundamental para a segurança da rede, protegendo a comunicação de interceptações. A compreensão de como os dados viajam e como podem ser protegidos é um passo crucial para quem, como eu, aspira a uma carreira em segurança cibernética.
